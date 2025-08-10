@@ -1,0 +1,56 @@
+{
+  "name": "generator-cli",
+  "version": "1.0.0",
+  "description": "Comprehensive CLI tool for generating API documentation spreadsheets and TypeScript code for Next.js projects",
+  "main": "dist/index.js",
+  "bin": {
+    "generator-cli": "./dist/cli.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "dev": "ts-node src/cli.ts",
+    "start": "node dist/cli.js",
+    "test": "jest",
+    "lint": "eslint src --ext .ts",
+    "format": "prettier --write src/**/*.ts"
+  },
+  "keywords": [
+    "cli",
+    "api",
+    "documentation",
+    "swagger",
+    "typescript",
+    "nextjs",
+    "code-generation",
+    "ai-integration"
+  ],
+  "author": "Your Name",
+  "license": "MIT",
+  "dependencies": {
+    "@apidevtools/swagger-parser": "^12.0.0",
+    "chalk": "^5.5.0",
+    "change-case": "^5.4.4",
+    "commander": "^14.0.0",
+    "cosmiconfig": "^9.0.0",
+    "fs-extra": "^11.3.1",
+    "handlebars": "^4.7.8",
+    "inquirer": "^12.9.1",
+    "ora": "^8.2.0",
+    "xlsx": "^0.18.5",
+    "zod": "^4.0.17"
+  },
+  "devDependencies": {
+    "@types/fs-extra": "^11.0.4",
+    "@types/inquirer": "^9.0.9",
+    "@types/node": "^20.11.19",
+    "@typescript-eslint/eslint-plugin": "^8.39.0",
+    "@typescript-eslint/parser": "^8.39.0",
+    "eslint": "^9.33.0",
+    "prettier": "^3.2.5",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.9.2"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
